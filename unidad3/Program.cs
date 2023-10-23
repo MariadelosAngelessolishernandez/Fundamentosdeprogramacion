@@ -6,15 +6,16 @@ namespace U3program5
     {
         static void Main(string[] args)
         {
-            int edad; //2
-            Console.Write("Escribe tu edad: ");//3
-            edad = Convert.ToInt32(Console.ReadLine());
-            if (edad >= 18)
-            Console.WriteLine("Eres mayor de edad!!");//5a
-        else //6
-            Console.WriteLine ("eres menor de edad");//6a
-            
+            int numero; //2
+            Console.Write("Ingresa un numero entero: ");//3
+            numero = Convert.ToInt32(Console.ReadLine());
+            if (numero%2==0 )
+                Console.WriteLine("Es par!!");//5a
+            else //6
+                Console.WriteLine("Es impar");//6a
+
         }
     }
 }
+
 
