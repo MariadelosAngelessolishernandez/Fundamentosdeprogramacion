@@ -1,33 +1,30 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
-namespace U3pmayorMenor
+namespace program2
 {
     internal class program
     {
         static void Main(string[] args)
         {
+            int temperatura;
+            Console.WriteLine("Ingresa la temperatura!");
+            temperatura = Convert.ToInt32(Console.ReadLine());
+            if (temperatura >= 27)
+                Console.WriteLine("Hace calor");
 
-
-            int n1, n2;
-            Console.WriteLine("Intruduce el primer numero");
-            n1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Intruduce el segundo numero");
-            n2 = Convert.ToInt32(Console.ReadLine());
-
-            if (n1 == n2)
-                Console.WriteLine("Son iguales");
+        else
+            {
+                if (temperatura >= 20 && temperatura < 27)
+                    Console.WriteLine(" Clima agradable");
 
             else
-            {
-                if (n1 > n2)
-                    Console.WriteLine(n1 + " es mayor que " + n2);
+                {
+                    if (temperatura < 20)
 
-                else
-                    Console.WriteLine(n2 + " es mayor que " + n1);
+                        Console.WriteLine(" Clima frio ");
+                }
+
             }
         }
     }
 }
-
-        
-
