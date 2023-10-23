@@ -6,16 +6,31 @@ namespace U3program5
     {
         static void Main(string[] args)
         {
-            int numero; //2
-            Console.Write("Ingresa un numero entero: ");//3
-            numero = Convert.ToInt32(Console.ReadLine());
-            if (numero%2==0 )
-                Console.WriteLine("Es par!!");//5a
-            else //6
-                Console.WriteLine("Es impar");//6a
+            double p1, p2, p3, total;
+            Console.Write("Escribe el precio 1: ");
+            p1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Escribe el precio 2: ");
+            p2 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Escribe el precio 3: ");
+            p3 = Convert.ToDouble(Console.ReadLine());
+            total = p1 + p2 + p3;
+            if (total >= 1500 ) {
+                total = total - (total * 0.30);
+                Console.WriteLine("El total (30% desc):" + total);
+            } else if (total < 1500 && total >= 1000) {
+                total = total - (total * 0.20);
+                Console.WriteLine("El total (20% desc):" + total);
+            } else if (total < 1000 && total >= 700)
+            {
+                total = total - (total * 0.10);
+                Console.WriteLine("El total (10% desc):" + total);
+            }
+            else
+            {
+                Console.WriteLine("El total(sin desc): " + total);
 
+
+            }
         }
     }
 }
-
-
