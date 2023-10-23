@@ -1,30 +1,33 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using System;
-namespace program2
+using System; //paso1
+using System.Drawing;
+
+namespace programa1//aso1
 {
-    internal class program
+    internal class program //paso1
     {
-        static void Main(string[] args)
+        static void Main(string[] args)//paso1
+
+
         {
-            int temperatura;
-            Console.WriteLine("Ingresa la temperatura!");
-            temperatura = Convert.ToInt32(Console.ReadLine());
-            if (temperatura >= 27)
-                Console.WriteLine("Hace calor");
+            int cobro, horas;
 
-        else
-            {
-                if (temperatura >= 20 && temperatura < 27)
-                    Console.WriteLine(" Clima agradable");
+            Console.WriteLine("Ingresa el valor de horas: ");
+            horas = Convert.ToInt32(Console.ReadLine());
 
-            else
-                {
-                    if (temperatura < 20)
 
-                        Console.WriteLine(" Clima frio ");
-                }
-
-            }
+            cobro = 0;
+            if (horas <= 2)
+                cobro = horas * 5;
+            if (horas > 2 && horas <= 5)
+                cobro = 2 * 5 + (horas - 2) * 4;
+            if (horas > 5 && horas <= 10)
+                cobro = 2 * 5 + 3 * 4 + (horas - 5) * 3;
+            if (horas > 10)
+                cobro = 2 * 5 + 3 * 4 + 5 * 3 + (horas - 10);
+            Console.WriteLine("Valor de cobro: " + cobro);
         }
     }
 }
+
+
