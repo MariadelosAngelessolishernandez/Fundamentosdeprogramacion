@@ -1,0 +1,40 @@
+Unidad 5-modularidad 28 de noviembre al 6 de diciembre evaluacion 7 y 8
+
+java     Metodos o funciones
+c#
+ main(){
+       ejecutarse (todo va dentro del main)
+   }
+
+Calculadora       variable
+suma               a b r (+)
+resta              a b r (-)
+multiblicacion     a b r (*)
+divicion           a b r (/) (denominador no puede ser 0)
+
+
+main(){
+}
+public tipoDato(uso de float ,doble) Nombre(tipoDato parametro1,tipoDato Parametro2)=(conocido como parametro dsndo el nombre y datos se separa con una ,){
+           //codigo:operaciones,calculos,arreglos,etc.
+retur valor;
+
+
+Todos los quesea 
+int
+float
+doble     } ocupan un retur (me nos el que diga void)
+bolean
+
+libreri mat tiene funciones matematicas
+
+        b--base,e--expanente
+pow(b,e); eleva potencia   randon(); numero alatorio      max(a,b); valor maximo de rango a,b        floor(x);Debuelve entero mas grande        abs(x);valor absoluto
+sqrt(x); raiz cuadrada     round(x); redondea un decimal   min(a,b);valor minimo del rango a,b         ceil(x);Debuelbe el entero mas pequeño
+
+
+pedro garcia guerrero
+juan satos
+ing bet
+
+tarea investigar librerias ,manejo de cadena strim,boleanos,CON SU FUNCIONES DE PARAMETRO Y DES CRIPCION ,COMO SE MUESTRA rriba 
